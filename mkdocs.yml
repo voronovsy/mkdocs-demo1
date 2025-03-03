@@ -1,0 +1,4 @@
+site_name: Web3 Sergey Voronov
+site_url: https://voronovsy.gihub.io/mkdocs-demo1/
+theme:
+  name: material
