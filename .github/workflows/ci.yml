@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: mkdocs-prod
-      url: https://etoosamoe.github.io/mkdocs-demo-site
+      url: https://voronovsys.github.io/mkdocs-demo1
     steps:
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config user.esssmail 41898282+github-actions[bot]@users.noreply.github.com
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
@@ -29,4 +29,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deplsoy --force
